@@ -96,6 +96,9 @@ DMS_fnc_setRelPositions =
 		_objPos = [_newCPos,_relpos] call DMS_fnc_CalcPos;
 
 		_x setPosATL _objPos;
+		_x setVectorUp surfaceNormal position _x; // Make buildings map to the terrain
+		_x enableSimulation false; // Disable simulation on buildings placed
+		
 		//diag_log format ["Setting %1 at %2; %3 is the relpos from original center %4, reapplied to new center %5",typeOf _x,_objPos,_relpos,_center,_newCPos];
 	} foreach _objects;
 };
