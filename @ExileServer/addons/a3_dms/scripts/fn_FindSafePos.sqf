@@ -9,14 +9,15 @@
 	Usage:
 	[
 		_nearestObjectMinDistance,	// NUMBER (distance): Minimum distance from the nearest object.
-		_waterNearLimit,			// NUMBER (distance): Minimum distance from water.
-		_minSurfaceNormal,			// NUMBER (between 0-1): Maximum "surfaceNormal"; Basically determines how steep a position is. Check the comment for config value "DMS_MinSurfaceNormal" in config.sqf for more info
+		_waterNearLimit,		// NUMBER (distance): Minimum distance from water.
+		_minSurfaceNormal,		// NUMBER (between 0-1): Maximum "surfaceNormal"; Basically determines how steep a position is. Check the comment for config value "DMS_MinSurfaceNormal" in config.sqf for more info
 		_spawnZoneNearLimit,		// NUMBER (distance): Minimum distance from a spawn point.
 		_traderZoneNearLimit,		// NUMBER (distance): Minimum distance from a trader zone.
-		_missionNearLimit,			// NUMBER (distance): Minimum distance from another mission.
-		_playerNearLimit,			// NUMBER (distance): Minimum distance from a player.
-		_throttleParams				// BOOLEAN: Whether or not some of the distance values should be throttled on repeated attempts.
-		_waterSpawn					// (OPTIONAL) BOOLEAN: Whether or not the mission is supposed to spawn on water. Default: false
+		_missionNearLimit,		// NUMBER (distance): Minimum distance from another mission.
+		_playerNearLimit,		// NUMBER (distance): Minimum distance from a player.
+		_territoryNearLimit,		// NUMBER (distance): Minimum distance from a territory.
+		_throttleParams			// BOOLEAN: Whether or not some of the distance values should be throttled on repeated attempts.
+		_waterSpawn			// (OPTIONAL) BOOLEAN: Whether or not the mission is supposed to spawn on water. Default: false
 	] call DMS_fnc_findSafePos;
 */
 
